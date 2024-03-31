@@ -1,0 +1,137 @@
+ /* Slideshow container */
+ .home-slider-section {
+     max-width: 100%;
+     max-height: 600px;
+     position: relative;
+     margin: auto;
+ }
+
+ .home-slider-section figure {
+     margin: 0px;
+     padding: 0px;
+ }
+
+ /* Slides */
+ .home-slider-section .slide-content-holder {
+     display: none;
+     position: relative;
+ }
+
+ .home-slider-section .slide-content-holder img {
+     width: 100%;
+     object-fit: cover;
+     max-height: 600px;
+ }
+
+ /* Display and positioning for captions */
+ .home-slider-section .slide-content {
+     position: absolute;
+     top: -50%;
+     left: 50%;
+     height: 100%;
+     transform: translate(-50%, 50%);
+     text-align: center;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     background-color: rgba(0, 0, 0, 0.514);
+     width: 100%;
+
+     color: white;
+     text-shadow: 2px 2px 4px #00000037;
+ }
+
+ .home-slider-section .slide-content h2 {
+     font-size: 2em;
+     margin-bottom: 1em;
+     color: #f39c12;
+ }
+
+ .home-slider-section .slide-content .shop-now-button {
+     padding: 1em 2em;
+     background-color: #000;
+     color: white;
+     text-decoration: none;
+     border-radius: 3em;
+     margin-top: 10px;
+     text-transform: uppercase;
+     margin-bottom: 4em;
+ }
+
+
+ /* Next & previous buttons */
+ .home-slider-section .slider-nav-btn {
+     cursor: pointer;
+     position: absolute;
+     top: 50%;
+     width: auto;
+
+     padding: 16px;
+     margin-top: -50px;
+     color: white;
+     background-color: #44444455;
+     font-weight: bold;
+     font-size: 18px;
+     transition: 0.6s ease;
+     height: 3em;
+     width: 3em;
+     outline: none !important;
+     border: none !important;
+ }
+
+
+ /* Position the "next button" to the right */
+ .home-slider-section .slider-nav-btn.next-btn {
+     right: 1em;
+     border-radius: 50%;
+
+ }
+
+ /* Position the "previous button" to the left */
+ .home-slider-section .slider-nav-btn.prev-btn {
+     left: 1em;
+     border-radius: 50%;
+
+ }
+
+ /* On hover, add a black background color with a little bit see-through */
+ .home-slider-section .slider-nav-btn:hover {
+     background-color: #000000;
+     text-decoration: none;
+ }
+
+ /* Fading animation */
+ .home-slider-section .fade {
+     animation-name: fade;
+     animation-duration: 1.5s;
+ }
+
+ @keyframes fade {
+     from {
+         opacity: .4
+     }
+
+     to {
+         opacity: 1
+     }
+ }
+
+ /* Responsive layout - makes the slideshow container fit the screen */
+ @media only screen and (max-width: 600px) {
+     .home-slider-section {
+         width: 100%;
+     }
+     .home-slider-section { 
+        min-height: 600px; 
+    }
+    .home-slider-section img { 
+        min-height: 600px; 
+    }
+
+    .home-slider-section button { 
+      max-width: 90%!important;
+      margin: 0 auto!important;
+    }
+   
+ }

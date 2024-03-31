@@ -1,0 +1,947 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mobiliaria</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <link rel="stylesheet" type="text/css" href="css/icons/font/flaticon_mycollection.css">
+    <link rel="stylesheet" type="text/css" href="css/slider.css">
+</head>
+
+<body>
+    <!-- HEADER -->
+    <header>
+        <section class="top-bar">
+            <nav class="top-nav-left">
+                <a href="#">Sobre nosotros</a>
+                <a href="#">Contáctanos</a>
+                <a href="#">Ayuda</a>
+            </nav>
+            <nav class="top-nav-right">
+                <a href="#"> <i class="flaticon-favorito-1"></i> Favoritos</a>
+                <a href="#"><i class="flaticon-usuario"></i> Mi cuenta </a>
+            </nav>
+        </section>
+        <section class="logo-search-cart">
+            <a href="index.html" class="h-logo"><img src="assets/img/logo_x1.png" alt="Mobiliaria"
+                    aria-hidden="true">.</a>
+
+
+            <form action="" method="" class="search-bar-container">
+                <!-- <label for="category-select" class="visually-hidden">Elegir categoría:</label> -->
+                <select id="category-select" name="category" class="search-select">
+                    <option value="all">Muebles</option>
+                    <option value="books">Sofás</option>
+                    <option value="electronics">Sillas</option>
+                    <option value="electronics">Sofás</option>
+                    <!-- Add other categories here -->
+                </select>
+
+                <input type="search" name="search" class="search-input" placeholder="Buscar por categoría...">
+
+                <button type="submit" class="search-button">
+                    <i class="flaticon flaticon-lupa"></i>
+                </button>
+            </form>
+            <a href="product.html" class="shop-cart"><i
+                    class="flaticon flaticon-carrito-de-compras"></i><small>3</small>
+                <strong>Carrito</strong></a>
+
+        </section>
+        <nav class="main-nav">
+            <a href="#" class="active"><i class="flaticon flaticon-pagina-de-inicio "></i> Inicio</a>
+            <a href="#"><i class="flaticon flaticon-sala-de-estar"></i> Muebles</a>
+            <a href="#"><i class="flaticon flaticon-sofa"></i>Sofás</a>
+            <a href="#"> <i class="flaticon flaticon-silla"></i>Sillas</a>
+            <a href="#"> <i class="flaticon flaticon-mesa-de-comedor"></i>Mesas</a>
+
+        </nav>
+    </header>
+
+    <!-- MAIN -->
+    <main>
+        <!-- HOME SLIDER -->
+        <section class="home-slider-section" id="home-slider">
+            <figure class="slide-content-holder">
+                <img src="assets/img/placeholder-1.webp" alt="Imagen de Slide 0">
+                <figcaption class="slide-content">
+                    <h2>-20% Descuento</h2>
+                    <p>¡No te pierdas la oportunidad de adquirir uno de nuestros productos en oferta especial, ya se
+                        termina!.</p>
+                    <a href="#" class="shop-now-button">¡Cómpralo Ahora!</a>
+                </figcaption>
+            </figure>
+            <figure class="slide-content-holder">
+                <img src="assets/img/placeholder-1.webp" alt="Imagen de Slide 0">
+                <figcaption class="slide-content">
+                    <h2>-10% Descuento</h2>
+                    <p>¡No te pierdas la oportunidad de adquirir uno de nuestros productos en oferta especial, ya se
+                        termina!.</p>
+                    <a href="#" class="shop-now-button">¡Cómpralo Ahora!</a>
+                </figcaption>
+            </figure>
+
+            <nav class="slider-navigation">
+                <button class="slider-nav-btn prev-btn" onclick="plusDivs(-1)">&#10094;</button>
+                <button class="slider-nav-btn next-btn" onclick="plusDivs(1)">&#10095;</button>
+            </nav>
+
+        </section>
+        <!-- SECCIÓN DE GARANTÍAS -->
+        <section class="service-features">
+            <h2 class="section-title">NUESTRAS GARANTÍAS</h2>
+
+            <article class="feature">
+                <i class="flaticon flaticon-entrega"></i>
+                <h2>Envío Gratuito</h2>
+                <p>Envío gratis en envíos mayores a $100.</p>
+            </article>
+            <article class="feature">
+                <i class="flaticon flaticon-retorno-de-la-inversion"></i>
+                <h2>Garantía de devolución</h2>
+                <p>Dentro de los 30 días.</p>
+            </article>
+            <article class="feature">
+                <i class="flaticon flaticon-tarjeta-de-credito"></i>
+                <h2>Métodos de pagos</h2>
+                <p>Facilidad de usar diferentes tipos métodos de pago.</p>
+            </article>
+            <article class="feature">
+                <i class="flaticon flaticon-mesa-de-ayuda"></i>
+                <h2>Soporte en línea</h2>
+                <p>Soporte 24h/7.</p>
+            </article>
+
+        </section>
+        <!-- SECCIÓN CATEGORÍA DE PRODUCTOS -->
+        <section class="category-gallery">
+            <article class="item cate-large-1">
+                <img src="assets/img/productos/categorias/cat-x2/Muebles.jpg" alt="Muebles">
+                <a href="product.html" class="cat-name">
+                    <h2>Muebles</h2>
+                    <p>12 productos</p>
+                </a>
+
+                <a href="product.html" class="hover-preview">
+
+                    <button>Comprar ahora <i class="flaticon flaticon-carrito-de-compras"></i></button>
+                </a>
+            </article>
+
+            <article class="item cate-small-1">
+                <img src="assets/img/productos/categorias/cat-x2/Mesas.jpg" alt="Mesas">
+                <a href="product.html" class="cat-name">
+                    <h2>Mesas</h2>
+                    <p>4 productos</p>
+                </a>
+                <a href="product.html" class="hover-preview">
+
+                    <button>Comprar ahora <i class="flaticon flaticon-carrito-de-compras"></i></button>
+                </a>
+            </article>
+
+            <article class="item cate-small-2">
+                <img src="assets/img/productos/categorias/cat-x2/Sillas.jpg" alt="Sillas">
+                <a href="product.html" class="cat-name">
+                    <h2>Sillas</h2>
+                    <p>4 productos</p>
+                </a>
+                <a href="product.html" class="hover-preview">
+
+                    <button>Comprar ahora <i class=" flaticon flaticon-carrito-de-compras"></i></button>
+                </a>
+            </article>
+
+            <article class="item cate-small-3">
+                <img src="assets/img/productos/categorias/cat-x2/Sofas.jpg" alt="Sofás">
+                <a href="product.html" class="cat-name">
+                    <h2>Sofás</h2>
+                    <p>4 productos</p>
+                </a>
+                <a href="product.html" class="hover-preview">
+
+                    <button>Comprar ahora <i class="flaticon flaticon-carrito-de-compras"></i></button>
+                </a>
+            </article>
+        </section>
+        <!-- SECCIÓN OFERTAS ESPECIALES -->
+        <section class="latest-products special-offers">
+            <h2 class="section-title">Ofertas especiales</h2>
+            <p class="description">¡No te pierdas la oportunidad de adquirir uno de nuestros productos en oferta
+                especial,
+                ya se termina!</p>
+
+            <!-- Grid de 8 productos -->
+            <ul class="products-grid">
+                <li>
+                    <article class="product-card">
+                        <a href="product.html">
+                            <figure class="product-image">
+                                <img src="assets/img/productos/sillas/Modai/Madai_p_0.webp"
+                                    alt="Helda - Silla de comedor">
+                                <figcaption class="product-status">
+                                    <p class="new">NEW!</p>
+                                    <p class="sale">SALE!</p>
+                                    <i class="product-view flaticon flaticon-ojo"></i>
+
+                                    <ul class="product-favourite-btn  ">
+                                        <li><i class="favourite-un  flaticon flaticon-favorito"></i></li>
+                                        <li><i class="favourite-cd flaticon flaticon-favorito-1"></i></li>
+                                    </ul>
+                                </figcaption>
+                            </figure>
+                        </a>
+                        <section class="product-details">
+                            <h3 class="product-name"><a href="product.html">Helda</a></h3>
+                            <p class="product-description">Silla de escritorio Madai de chenilla beige y chapa fresno
+                                acabado natural.</p>
+                            <footer class="product-footer">
+                                <p class="product-pricing">
+                                    <del class="original-price">291.16</del>
+                                    <ins class="sale-price">€288.43</ins>
+                                </p>
+
+                                <aside class="product-rating">
+                                    <ul class="rating-stars">
+                                        <li><i class="flaticon flaticon-estrella-1"></i></li>
+                                        <li><i class="flaticon flaticon-estrella-1"></i></li>
+                                        <li><i class="flaticon flaticon-estrella-1"></i></li>
+                                        <li><i class="flaticon flaticon-estrella-1"></i></li>
+                                        <li><i class="flaticon flaticon-estrella-1"></i></li>
+                                    </ul>
+                                    <strong class="rating-count">(5)</strong>
+                                    <p class="product-sold">
+                                        <strong><i class="flaticon flaticon-marca-de-verificacion"></i> STOCK</strong>
+                                        15/48
+                                    </p>
+                                </aside>
+
+
+                                <button class="add-to-cart-btn-np">AÑADIR <i
+                                        class="flaticon flaticon-carrito-de-compras"></i></button>
+                            </footer>
+                        </section>
+                    </article>
+                </li>
+                <li>
+                    <article class="product-card">
+                        <a href="product.html">
+                            <figure class="product-image">
+                                <img src="assets/img/productos/sillas/Helda/helda_0.webp"
+                                    alt="Helda - Silla de comedor">
+                                <figcaption class="product-status">
+                                    <p class="sale">SALE!</p>
+                                    <i class="product-view flaticon flaticon-ojo"></i>
+
+                                    <ul class="product-favourite-btn  ">
+                                        <li><i class="favourite-un  flaticon flaticon-favorito"></i></li>
+                                        <li><i class="favourite-cd flaticon flaticon-favorito-1"></i></li>
+                                    </ul>
+                                </figcaption>
+                            </figure>
+                        </a>
+                        <section class="product-details">
+                            <h3 class="product-name"><a href="product.html">Helda</a></h3>
+                            <p class="product-description">Silla Helda de chenilla mostaza y madera maciza de robleo.
+                            </p>
+                            <footer class="product-footer">
+                                <p class="product-pricing">
+                                    <del class="original-price">161.16</del>
+                                    <ins class="sale-price">€139.99</ins>
+                                </p>
+
+                                <aside class="product-rating">
+                                    <ul class="rating-stars">
+                                        <li><i class="flaticon flaticon-estrella-1"></i></li>
+                                        <li><i class="flaticon flaticon-estrella-1"></i></li>
+                                        <li><i class="flaticon flaticon-estrella-1"></i></li>
+                                        <li><i class="flaticon flaticon-estrella-1"></i></li>
+                                        <li><i class="flaticon flaticon-estrella-1"></i></li>
+                                    </ul>
+                                    <strong class="rating-count">(15)</strong>
+                                    <p class="product-sold">
+                                        <strong><i class="flaticon flaticon-marca-de-verificacion"></i> STOCK</strong>
+                                        46/48
+                                    </p>
+                                </aside>
+
+
+                                <button class="add-to-cart-btn-np">AÑADIR <i
+                                        class="flaticon flaticon-carrito-de-compras"></i></button>
+                            </footer>
+                        </section>
+                    </article>
+                </li>
+                <li>
+                    <article class="product-card">
+                        <a href="product.html">
+                            <figure class="product-image">
+                                <img src="assets/img/productos/mesas/sashi/Sashi_0.jpg" alt="Helda - Silla de comedor">
+                                <figcaption class="product-status">
+                                    <p class="sale">SALE!</p>
+                                    <i class="product-view flaticon flaticon-ojo"></i>
+
+                                    <ul class="product-favourite-btn  ">
+                                        <li><i class="favourite-un  flaticon flaticon-favorito"></i></li>
+                                        <li><i class="favourite-cd flaticon flaticon-favorito-1"></i></li>
+                                    </ul>
+                                </figcaption>
+                            </figure>
+                        </a>
+                        <section class="product-details">
+                            <h3 class="product-name"><a href="product.html">SASHI</a></h3>
+                            <p class="product-description">Mesa Sashi de madera maciza de teca 220 x 100 cm.
+                            </p>
+                            <footer class="product-footer">
+                                <p class="product-pricing">
+                                    <del class="original-price">161.16</del>
+                                    <ins class="sale-price">€1073.99</ins>
+                                </p>
+
+                                <aside class="product-rating">
+                                    <ul class="rating-stars">
+                                        <li><i class="flaticon flaticon-estrella-1"></i></li>
+                                        <li><i class="flaticon flaticon-estrella-1"></i></li>
+                                        <li><i class="flaticon flaticon-estrella-1"></i></li>
+                                        <li><i class="flaticon flaticon-estrella-1"></i></li>
+                                        <li><i class="flaticon flaticon-estrella-1"></i></li>
+                                    </ul>
+                                    <strong class="rating-count">(15)</strong>
+                                    <p class="product-sold">
+                                        <strong><i class="flaticon flaticon-marca-de-verificacion"></i> STOCK</strong>
+                                        46/48
+                                    </p>
+                                </aside>
+
+
+                                <button class="add-to-cart-btn-np">AÑADIR <i
+                                        class="flaticon flaticon-carrito-de-compras"></i></button>
+                            </footer>
+                        </section>
+                    </article>
+                </li>
+
+            </ul>
+        </section>
+        <!-- SECCIÓN OFERTA -->
+        <section class="sale-banner">
+            <header class="sale-header">
+                <h2>¡Gran Oferta!</h2>
+                <p class="sale-offer">-20% Descuento</p>
+
+            </header>
+
+            <aside class="sale-timer">
+                <time datetime="YYYY-MM-DDThh:mm:ss">21 <p>Días</p></time>
+                <time datetime="YYYY-MM-DDThh:mm:ss">12 <p>Horas</p></time>
+                <time datetime="YYYY-MM-DDThh:mm:ss">21 <p>Minutos</p></time>
+                <time datetime="YYYY-MM-DDThh:mm:ss">55 <p>Segundos</p></time>
+            </aside>
+
+            <a href="product.html" class="shop-now-button"><i class="flaticon flaticon-rebaja"></i>¡Compra Ahora! </a>
+
+            <figure class="sale-product">
+                <img src="assets/img/placeholder-1.webp" alt="Comfortable grey chair on sale">
+            </figure>
+        </section>
+        <!-- SECCIÓN DE NUEVOS PRODUCTOS -->
+        <section class="latest-products">
+            <h2 class="section-title">Nuevos productos</h2>
+            <!-- Grid de 8 productos -->
+            <ul class="products-grid">
+                <li>
+                    <article class="product-card">
+                        <a href="product.html">
+                            <figure class="product-image">
+                                <img src="assets/img/productos/sillas/Modai/Madai_p_0.webp"
+                                    alt="Helda - Silla de comedor">
+                                <figcaption class="product-status">
+                                    <p class="new">NEW!</p>
+                                    <p class="sale">SALE!</p>
+                                    <i class="product-view flaticon flaticon-ojo"></i>
+
+                                    <ul class="product-favourite-btn  ">
+                                        <li><i class="favourite-un  flaticon flaticon-favorito"></i></li>
+                                        <li><i class="favourite-cd flaticon flaticon-favorito-1"></i></li>
+                                    </ul>
+                                </figcaption>
+                            </figure>
+                        </a>
+                        <section class="product-details">
+                            <h3 class="product-name"><a href="product.html">Helda</a></h3>
+                            <p class="product-description">Silla de escritorio Madai de chenilla beige y chapa fresno
+                                acabado natural.</p>
+                            <footer class="product-footer">
+                                <p class="product-pricing">
+                                    <del class="original-price">291.16</del>
+                                    <ins class="sale-price">€288.43</ins>
+                                </p>
+
+                                <aside class="product-rating">
+                                    <ul class="rating-stars">
+                                        <li><i class="flaticon flaticon-estrella-1"></i></li>
+                                        <li><i class="flaticon flaticon-estrella-1"></i></li>
+                                        <li><i class="flaticon flaticon-estrella-1"></i></li>
+                                        <li><i class="flaticon flaticon-estrella-1"></i></li>
+                                        <li><i class="flaticon flaticon-estrella-1"></i></li>
+                                    </ul>
+                                    <strong class="rating-count">(5)</strong>
+                                    <p class="product-sold">
+                                        <strong><i class="flaticon flaticon-marca-de-verificacion"></i> STOCK</strong>
+                                        15/48
+                                    </p>
+                                </aside>
+
+
+                                <button class="add-to-cart-btn-np">AÑADIR <i
+                                        class="flaticon flaticon-carrito-de-compras"></i></button>
+                            </footer>
+                        </section>
+                    </article>
+                </li>
+                <li>
+                    <article class="product-card">
+                        <a href="product.html">
+                            <figure class="product-image">
+                                <img src="assets/img/productos/sillas/Helda/helda_0.webp"
+                                    alt="Helda - Silla de comedor">
+                                <figcaption class="product-status">
+                                    <p class="new">NEW!</p>
+                                    <p class="sale">SALE!</p>
+                                    <i class="product-view flaticon flaticon-ojo"></i>
+
+                                    <ul class="product-favourite-btn  ">
+                                        <li><i class="favourite-un  flaticon flaticon-favorito"></i></li>
+                                        <li><i class="favourite-cd flaticon flaticon-favorito-1"></i></li>
+                                    </ul>
+                                </figcaption>
+                            </figure>
+                        </a>
+                        <section class="product-details">
+                            <h3 class="product-name"><a href="product.html">Helda</a></h3>
+                            <p class="product-description">Silla Helda de chenilla mostaza y madera maciza de robleo.
+                            </p>
+                            <footer class="product-footer">
+                                <p class="product-pricing">
+                                    <del class="original-price">161.16</del>
+                                    <ins class="sale-price">€139.99</ins>
+                                </p>
+
+                                <aside class="product-rating">
+                                    <ul class="rating-stars">
+                                        <li><i class="flaticon flaticon-estrella-1"></i></li>
+                                        <li><i class="flaticon flaticon-estrella-1"></i></li>
+                                        <li><i class="flaticon flaticon-estrella-1"></i></li>
+                                        <li><i class="flaticon flaticon-estrella-1"></i></li>
+                                        <li><i class="flaticon flaticon-estrella-1"></i></li>
+                                    </ul>
+                                    <strong class="rating-count">(5)</strong>
+                                    <p class="product-sold">
+                                        <strong><i class="flaticon flaticon-marca-de-verificacion"></i> STOCK</strong>
+                                        15/48
+                                    </p>
+                                </aside>
+
+
+                                <button class="add-to-cart-btn-np">AÑADIR <i
+                                        class="flaticon flaticon-carrito-de-compras"></i></button>
+                            </footer>
+                        </section>
+                    </article>
+                </li>
+                <li>
+                    <article class="product-card">
+                        <a href="product.html">
+                            <figure class="product-image">
+                                <img src="assets/img/productos/sofas/sofa_cama/Campo/Campo_0.jpg"
+                                    alt="Helda - Silla de comedor">
+                                <figcaption class="product-status">
+                                    <p class="new">NEW!</p>
+                                    <!-- <p class="sale">SALE!</p> -->
+                                    <i class="product-view flaticon flaticon-ojo"></i>
+                                    <ul class="product-favourite-btn checked  ">
+                                        <li><i class="favourite-un  flaticon flaticon-favorito"></i></li>
+                                        <li><i class="favourite-cd flaticon flaticon-favorito-1"></i></li>
+                                    </ul>
+                                </figcaption>
+                            </figure>
+                        </a>
+                        <section class="product-details">
+                            <h3 class="product-name"><a href="product.html">CAMPO</a></h3>
+                            <p class="product-description">Sofá Compo 3 plazas beige 232 cm</p>
+                            <footer class="product-footer">
+                                <p class="product-pricing">
+                                    <del class="original-price"></del>
+                                    <ins class="sale-price">€1103.31</ins>
+                                </p>
+
+                                <aside class="product-rating">
+                                    <ul class="rating-stars">
+                                        <li><i class="flaticon flaticon-estrella-1"></i></li>
+                                        <li><i class="flaticon flaticon-estrella-1"></i></li>
+                                        <li><i class="flaticon flaticon-estrella-1"></i></li>
+                                        <li><i class="flaticon flaticon-estrella-1"></i></li>
+                                        <li><i class="flaticon flaticon-estrella-1"></i></li>
+                                    </ul>
+                                    <strong class="rating-count">(5)</strong>
+                                    <p class="product-sold">
+                                        <strong><i class="flaticon flaticon-marca-de-verificacion"></i> STOCK</strong>
+                                        15/48
+                                    </p>
+                                </aside>
+
+
+                                <button class="add-to-cart-btn-np">AÑADIR <i
+                                        class="flaticon flaticon-carrito-de-compras"></i></button>
+                            </footer>
+                        </section>
+                    </article>
+                </li>
+                <li>
+                    <article class="product-card">
+                        <a href="product.html">
+                            <figure class="product-image">
+                                <img src="assets/img/productos/mesas/montuiri/Montuiri_2.jpg"
+                                    alt="Helda - Silla de comedor">
+                                <figcaption class="product-status">
+                                    <p class="new">NEW!</p>
+                                    <!-- <p class="sale">SALE!</p> -->
+                                    <i class="product-view flaticon flaticon-ojo"></i>
+                                    <ul class="product-favourite-btn  ">
+                                        <li><i class="favourite-un  flaticon flaticon-favorito"></i></li>
+                                        <li><i class="favourite-cd flaticon flaticon-favorito-1"></i></li>
+                                    </ul>
+                                </figcaption>
+                            </figure>
+                        </a>
+                        <section class="product-details">
+                            <h3 class="product-name"><a href="product.html">MONTUIRI</a></h3>
+                            <p class="product-description">Mesa extensible redonda Montuiri chapa de roble y patas de
+                                acero acabado gris Ø 120 (200) cm</p>
+                            <footer class="product-footer">
+                                <p class="product-pricing">
+                                    <del class="original-price"></del>
+                                    <ins class="sale-price">€615.70</ins>
+                                </p>
+
+                                <aside class="product-rating">
+                                    <ul class="rating-stars">
+                                        <li><i class="flaticon flaticon-estrella-1"></i></li>
+                                        <li><i class="flaticon flaticon-estrella-1"></i></li>
+                                        <li><i class="flaticon flaticon-estrella-1"></i></li>
+                                        <li><i class="flaticon flaticon-estrella-1"></i></li>
+                                        <li><i class="flaticon flaticon-estrella-1"></i></li>
+                                    </ul>
+                                    <strong class="rating-count">(5)</strong>
+                                    <p class="product-sold">
+                                        <strong><i class="flaticon flaticon-marca-de-verificacion"></i> STOCK</strong>
+                                        15/48
+                                    </p>
+                                </aside>
+
+
+                                <button class="add-to-cart-btn-np">AÑADIR <i
+                                        class="flaticon flaticon-carrito-de-compras"></i></button>
+                            </footer>
+                        </section>
+                    </article>
+                </li>
+                <li>
+                    <article class="product-card">
+                        <a href="product.html">
+                            <figure class="product-image">
+                                <img src="assets/img/productos/mesas/argo/Argo_0.jpg" alt="Helda - Silla de comedor">
+                                <figcaption class="product-status">
+                                    <p class="new">NEW!</p>
+                                    <!-- <p class="sale">SALE!</p> -->
+                                    <i class="product-view flaticon flaticon-ojo"></i>
+                                    <ul class="product-favourite-btn  ">
+                                        <li><i class="favourite-un  flaticon flaticon-favorito"></i></li>
+                                        <li><i class="favourite-cd flaticon flaticon-favorito-1"></i></li>
+                                    </ul>
+                                </figcaption>
+                            </figure>
+                        </a>
+                        <section class="product-details">
+                            <h3 class="product-name"><a href="product.html">Argo</a></h3>
+                            <p class="product-description">Mesa Argo de cristal negro y patas de acero con acabado negro
+                                180x100 cm</p>
+                            <footer class="product-footer">
+                                <p class="product-pricing">
+                                    <del class="original-price"></del>
+                                    <ins class="sale-price">€371.70</ins>
+                                </p>
+
+                                <aside class="product-rating">
+                                    <ul class="rating-stars">
+                                        <li><i class="flaticon flaticon-estrella-1"></i></li>
+                                        <li><i class="flaticon flaticon-estrella-1"></i></li>
+                                        <li><i class="flaticon flaticon-estrella-1"></i></li>
+                                        <li><i class="flaticon flaticon-estrella-1"></i></li>
+                                        <li><i class="flaticon flaticon-estrella-1"></i></li>
+                                    </ul>
+                                    <strong class="rating-count">(5)</strong>
+                                    <p class="product-sold">
+                                        <strong><i class="flaticon flaticon-marca-de-verificacion"></i> STOCK</strong>
+                                        15/48
+                                    </p>
+                                </aside>
+
+
+                                <button class="add-to-cart-btn-np">AÑADIR <i
+                                        class="flaticon flaticon-carrito-de-compras"></i></button>
+                            </footer>
+                        </section>
+                    </article>
+                </li>
+                <li>
+                    <article class="product-card">
+                        <a href="product.html">
+                            <figure class="product-image">
+                                <img src="assets/img/productos/sillas/sillas_de_escritorio/Melva/Melva_0webp.webp"
+                                    alt="Helda - Silla de comedor">
+                                <figcaption class="product-status">
+                                    <p class="new">NEW!</p>
+                                    <!-- <p class="sale">SALE!</p> -->
+                                    <i class="product-view flaticon flaticon-ojo"></i>
+                                    <ul class="product-favourite-btn  ">
+                                        <li><i class="favourite-un  flaticon flaticon-favorito"></i></li>
+                                        <li><i class="favourite-cd flaticon flaticon-favorito-1"></i></li>
+                                    </ul>
+                                </figcaption>
+                            </figure>
+                        </a>
+                        <section class="product-details">
+                            <h3 class="product-name"><a href="product.html">Melva</a></h3>
+                            <p class="product-description">Silla de escritorio Melva negro</p>
+                            <footer class="product-footer">
+                                <p class="product-pricing">
+                                    <del class="original-price"></del>
+                                    <ins class="sale-price">€106.61</ins>
+                                </p>
+
+                                <aside class="product-rating">
+                                    <ul class="rating-stars">
+                                        <li><i class="flaticon flaticon-estrella-1"></i></li>
+                                        <li><i class="flaticon flaticon-estrella-1"></i></li>
+                                        <li><i class="flaticon flaticon-estrella-1"></i></li>
+                                        <li><i class="flaticon flaticon-estrella-1"></i></li>
+                                        <li><i class="flaticon flaticon-estrella-1"></i></li>
+                                    </ul>
+                                    <strong class="rating-count">(5)</strong>
+                                    <p class="product-sold">
+                                        <strong><i class="flaticon flaticon-marca-de-verificacion"></i> STOCK</strong>
+                                        15/48
+                                    </p>
+                                </aside>
+
+
+                                <button class="add-to-cart-btn-np">AÑADIR <i
+                                        class="flaticon flaticon-carrito-de-compras"></i></button>
+                            </footer>
+                        </section>
+                    </article>
+                </li>
+                <li>
+                    <article class="product-card">
+                        <a href="product.html">
+                            <figure class="product-image">
+                                <img src="assets/img/productos/mesas/sashi/Sashi_0.jpg" alt="Helda - Silla de comedor">
+                                <figcaption class="product-status">
+                                    <p class="sale">SALE!</p>
+                                    <i class="product-view flaticon flaticon-ojo"></i>
+
+                                    <ul class="product-favourite-btn  ">
+                                        <li><i class="favourite-un  flaticon flaticon-favorito"></i></li>
+                                        <li><i class="favourite-cd flaticon flaticon-favorito-1"></i></li>
+                                    </ul>
+                                </figcaption>
+                            </figure>
+                        </a>
+                        <section class="product-details">
+                            <h3 class="product-name"><a href="product.html">SASHI</a></h3>
+                            <p class="product-description">Mesa Sashi de madera maciza de teca 220 x 100 cm.
+                            </p>
+                            <footer class="product-footer">
+                                <p class="product-pricing">
+                                    <del class="original-price">161.16</del>
+                                    <ins class="sale-price">€1073.99</ins>
+                                </p>
+
+                                <aside class="product-rating">
+                                    <ul class="rating-stars">
+                                        <li><i class="flaticon flaticon-estrella-1"></i></li>
+                                        <li><i class="flaticon flaticon-estrella-1"></i></li>
+                                        <li><i class="flaticon flaticon-estrella-1"></i></li>
+                                        <li><i class="flaticon flaticon-estrella-1"></i></li>
+                                        <li><i class="flaticon flaticon-estrella-1"></i></li>
+                                    </ul>
+                                    <strong class="rating-count">(15)</strong>
+                                    <p class="product-sold">
+                                        <strong><i class="flaticon flaticon-marca-de-verificacion"></i> STOCK</strong>
+                                        46/48
+                                    </p>
+                                </aside>
+
+
+                                <button class="add-to-cart-btn-np">AÑADIR <i
+                                        class="flaticon flaticon-carrito-de-compras"></i></button>
+                            </footer>
+                        </section>
+                    </article>
+                </li>
+                <li>
+                    <article class="product-card">
+                        <a href="product.html">
+                            <figure class="product-image">
+                                <img src="assets/img/productos/sofas/sofas_3_plazas/Karin/Karin_0.jpg"
+                                    alt="Helda - Silla de comedor">
+                                <figcaption class="product-status">
+                                    <p class="sale">SALE!</p>
+                                    <i class="product-view flaticon flaticon-ojo"></i>
+
+                                    <ul class="product-favourite-btn  ">
+                                        <li><i class="favourite-un  flaticon flaticon-favorito"></i></li>
+                                        <li><i class="favourite-cd flaticon flaticon-favorito-1"></i></li>
+                                    </ul>
+                                </figcaption>
+                            </figure>
+                        </a>
+                        <section class="product-details">
+                            <h3 class="product-name"><a href="product.html">KARIN</a></h3>
+                            <p class="product-description">Sofá Karin 3 plazas beige y patas de madera maciza de haya
+                                231 cm.
+                            </p>
+                            <footer class="product-footer">
+                                <p class="product-pricing">
+                                    <del class="original-price">161.16</del>
+                                    <ins class="sale-price">€958.99</ins>
+                                </p>
+
+                                <aside class="product-rating">
+                                    <ul class="rating-stars">
+                                        <li><i class="flaticon flaticon-estrella-1"></i></li>
+                                        <li><i class="flaticon flaticon-estrella-1"></i></li>
+                                        <li><i class="flaticon flaticon-estrella-1"></i></li>
+                                        <li><i class="flaticon flaticon-estrella-1"></i></li>
+                                        <li><i class="flaticon flaticon-estrella-1"></i></li>
+                                    </ul>
+                                    <strong class="rating-count">(15)</strong>
+                                    <p class="product-sold">
+                                        <strong><i class="flaticon flaticon-marca-de-verificacion"></i> STOCK</strong>
+                                        46/48
+                                    </p>
+                                </aside>
+
+
+                                <button class="add-to-cart-btn-np">AÑADIR <i
+                                        class="flaticon flaticon-carrito-de-compras"></i></button>
+                            </footer>
+                        </section>
+                    </article>
+                </li>
+            </ul>
+        </section>
+        <!-- SECCIÓN DE REVIEWS -->
+        <section class="customer-reviews">
+            <h2 class="section-title">Lo que dicen nuestros clientes</h2>
+            <nav class="controls">
+                <button class="prev" aria-label="Anterior">
+                    <i class="flaticon flaticon-chevron-apuntando-a-la-izquierda"></i>
+                </button>
+                <button class="next" aria-label="Siguiente">
+                    <i class="flaticon flaticon-chevron-derecho"></i>
+                </button>
+            </nav>
+            <section class="slider">
+                <article class="review">
+                    <img class="client-image" src="assets/img/users/User-1.jpg" alt="Cliente 1">
+                    <h3 class="user-name">Jorge G.</h3>
+                    <p class="review-rating">
+                        <i class="flaticon-estrella-1"></i>
+                        <i class="flaticon-estrella-1"></i>
+                        <i class="flaticon-estrella-1"></i>
+                        <i class="flaticon-estrella-1"></i>
+                        <i class="flaticon-estrella-1"></i>
+                        <em>5/5</em>
+                    </p>
+                    <figure class="quoute-block">
+                        <blockquote>
+                            <p>¡Excelente calidad y servicio! ¡Recomendado!</p>
+                        </blockquote>
+                        <figcaption>
+                            <a href="product.html" class="product-reviewed">
+                                <img src="assets/img/sillas_thumbnail.webp" alt="Producto 1">
+                                <strong>Helda</strong></a>
+                        </figcaption>
+                    </figure>
+                </article>
+                <article class="review">
+                    <img class="client-image" src="assets/img/users/User-2.jpg" alt="Cliente 1">
+                    <h3 class="user-name">Lorenzo M.</h3>
+                    <p class="review-rating">
+                        <i class="flaticon-estrella-1"></i>
+                        <i class="flaticon-estrella-1"></i>
+                        <i class="flaticon-estrella-1"></i>
+                        <i class="flaticon-estrella-1"></i>
+                        <i class="flaticon-estrella-1"></i>
+                        <em>5/5</em>
+                    </p>
+                    <figure class="quoute-block">
+                        <blockquote>
+                            <p>¡Excelente calidad y servicio! ¡Recomendado!</p>
+                        </blockquote>
+                        <figcaption>
+                            <a href="product.html" class="product-reviewed">
+                                <img src="assets/img/sillas_thumbnail.webp" alt="Producto 1">
+                                <strong>Helda</strong></a>
+                        </figcaption>
+                    </figure>
+                </article>
+                <article class="review">
+                    <img class="client-image" src="assets/img/users/User-3.jpg" alt="Cliente 1">
+                    <h3 class="user-name">Santiago G.</h3>
+                    <p class="review-rating">
+                        <i class="flaticon-estrella-1"></i>
+                        <i class="flaticon-estrella-1"></i>
+                        <i class="flaticon-estrella-1"></i>
+                        <i class="flaticon-estrella-1"></i>
+                        <i class="flaticon-estrella-1"></i>
+                        <em>5/5</em>
+                    </p>
+                    <figure class="quoute-block">
+                        <blockquote>
+                            <p>¡Excelente calidad y servicio! ¡Recomendado!</p>
+                        </blockquote>
+                        <figcaption>
+                            <a href="product.html" class="product-reviewed">
+                                <img src="assets/img/productos/mesas/sashi/Sashi_0.jpg" alt="Producto 1">
+                                <strong>Sashi</strong></a>
+                        </figcaption>
+                    </figure>
+                </article>
+                <article class="review">
+                    <img class="client-image" src="assets/img/users/User-4.jpg" alt="Cliente 1">
+                    <h3 class="user-name">Pedro L.</h3>
+                    <p class="review-rating">
+                        <i class="flaticon-estrella-1"></i>
+                        <i class="flaticon-estrella-1"></i>
+                        <i class="flaticon-estrella-1"></i>
+                        <i class="flaticon-estrella-1"></i>
+                        <i class="flaticon-estrella-1"></i>
+                        <em>5/5</em>
+                    </p>
+                    <figure class="quoute-block">
+                        <blockquote>
+                            <p>¡Excelente calidad y servicio! ¡Recomendado!</p>
+                        </blockquote>
+                        <figcaption>
+                            <a href="product.html" class="product-reviewed">
+                                <img src="assets/img/productos/sofas/sofas_3_plazas/Karin/Karin_0.jpg" alt="Producto 1">
+                                <strong>Karin</strong></a>
+                        </figcaption>
+                    </figure>
+                </article>
+                <article class="review">
+                    <img class="client-image" src="assets/img/users/User-5.jpg" alt="Cliente 1">
+                    <h3 class="user-name">Miguel G.</h3>
+                    <p class="review-rating">
+                        <i class="flaticon-estrella-1"></i>
+                        <i class="flaticon-estrella-1"></i>
+                        <i class="flaticon-estrella-1"></i>
+                        <i class="flaticon-estrella-1"></i>
+                        <i class="flaticon-estrella-1"></i>
+                        <em>5/5</em>
+                    </p>
+                    <figure class="quoute-block">
+                        <blockquote>
+                            <p>¡Excelente calidad y servicio! ¡Recomendado!</p>
+                        </blockquote>
+                        <figcaption>
+                            <a href="product.html" class="product-reviewed">
+                                <img src="assets/img/productos/sillas/sillas_de_escritorio/Melva/Melva_0webp.webp"
+                                    alt="Producto 1">
+                                <strong>Melva</strong></a>
+                        </figcaption>
+                    </figure>
+                </article>
+            </section>
+
+
+        </section>
+    </main>
+
+    <!-- SECCIÓN DE PIE DE PÁGINA -->
+    <footer>
+        <section class="footer-info">
+            <h2>Mobiliaria</h2>
+            <article class="store-info">
+                <h2>Nuestra tienda</h2>
+                <p>Mobiliaria es una tienda de muebles ubicada en Madrid. ¡Los mejores productos del hogar, lo
+                    encuentras
+                    aquí!</p>
+                <ul class="social-links">
+                    <li> <a href="#" aria-label="Facebook"><i class="flaticon flaticon-logo-de-facebook"></i></a></li>
+                    <li><a href="#" aria-label="Twitter"><i class="flaticon flaticon-gorjeo"></i></a></li>
+                    <li> <a href="#" aria-label="Instagram"><i class="flaticon flaticon-instagram"></i></a> </li>
+                </ul>
+            </article>
+            <section class="quick-links">
+                <h2>Enlaces útiles</h2>
+                <nav>
+                    <a href="#">Mi cuenta</a>
+                    <a href="#">Favoritos</a>
+                    <a href="#">Muebles</a>
+                </nav>
+            </section>
+
+            <section class="information">
+                <h2>Información</h2>
+                <nav>
+                    <a href="#">Política de privacidad</a>
+                    <a href="#">Política de reembolso</a>
+                    <a href="#">Envío y devolución</a>
+                    <a href="#">Términos y condiciones</a>
+                </nav>
+            </section>
+
+
+            <section class="newsletter-form">
+                <h2>Ponte en contacto!</h2>
+                <p>Suscríbete a nuestra newsletter y recibe un 10% de descuento en tu próxima compra.</p>
+                <form action="" method="post">
+                    <input type="email" name="email" placeholder="Ingresa tu correo">
+                    <button type="submit">Subscribe <i class="flaticon flaticon-derecha"></i></button>
+                </form>
+            </section>
+
+
+        </section>
+        <hr>
+        <section class="footer-bottom">
+            <h6>&copy; 2024 Mobiliaria Todos los derechos reservados.</h6>
+            <ul class="payment-options">
+                <!-- Enlaces o imágenes de las opciones de pago -->
+                <li><a href="#"> <i class="flaticon flaticon-logotipo-de-paypal"></i></a></li>
+                <li><a href="#"> <i class="flaticon flaticon-simbolo"></i></a></li>
+                <li><a href="#"> <i class="flaticon flaticon-visa"></i></a></li>
+            </ul>
+        </section>
+
+
+    </footer>
+
+    <!-- Scripts -->
+    <script src="js/script.js"></script>
+    <!-- Slider de Home -->
+    <script src="js/slider.js"></script>
+
+</body>
+
+</html>
